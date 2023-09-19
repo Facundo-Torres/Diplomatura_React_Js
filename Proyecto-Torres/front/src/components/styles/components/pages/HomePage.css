@@ -1,0 +1,24 @@
+.container {
+    padding: 10px;
+    width: 100%;
+}
+
+.fs-3 {
+    font-size: 1.5rem;
+}
+
+.mb-5 {
+    margin-bottom: 20px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.bg-dark {
+    padding: 10px 0;
+}
+
+.body {
+    box-sizing: content-box;
+}
