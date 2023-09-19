@@ -1,11 +1,12 @@
 import React from 'react';
-import styles from '../styles/components/pages/HomePage.css'
+import "../styles/components/pages/HomePage.css"
+
 
 const HomePage = (props) => {
     return (
         <main className="holder">
             <div className="container fs-3 mt-5">
-                <p>Probando tamaño texto ....</p>
+                <p>Probando tamaño texto</p>
             </div>
             <div className="container mb-5">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione debitis ipsum nostrum architecto. Harumariatur provident nemo officiis ad inventore vitae, non reprehenderit sed consectetur nostrum eligendi, eocumque laboriosam!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione debitis ipsumnostrum architecto. Harumpariatur provident nemo officiis ad inventore vitae, non reprehenderit sed consectetur nostrum eligendi, eos
@@ -18,7 +19,7 @@ const HomePage = (props) => {
                         <div className="card mb-3" style={{ maxwidth: 'auto' }}>
                             <div className="row g-0">
                                 <div className="col-md-4">
-                                    <img src={'/public/Casa.png'} className="img-fluid rounded-start" alt="..." />
+                                    <img src={'https://facundo-torres.github.io/Diplomatura-Reactjs/Git-5-Proyecto-1/img/Casa.png'} className="img-fluid rounded-start" alt="..." />
                                 </div>
                                 <div className="novedades col-md-8">
                                     <div className="card-body">
