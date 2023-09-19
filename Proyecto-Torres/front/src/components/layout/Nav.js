@@ -22,13 +22,14 @@ const Nav = (props) => {
                         <li className="nav-item dropdown">
                             <Link className="nav-link text-white dropdown-toggle" to="/Inmueble" id="inmuebleDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Inmueble
-                            </Link>
+                           
                             <ul className="dropdown-menu" aria-labelledby="inmuebleDropdown">
                                 <li><Link className="dropdown-item" to="/Casas">Casas</Link></li>
                                 <li><Link className="dropdown-item" to="/Depto">Depto</Link></li>
                                 <li><hr className="dropdown-divider" /></li>
                                 <li><Link className="dropdown-item" to="/Reservas">Reservas</Link></li>
                             </ul>
+                            </Link>
                         </li>
                     </ul>
                 </div>

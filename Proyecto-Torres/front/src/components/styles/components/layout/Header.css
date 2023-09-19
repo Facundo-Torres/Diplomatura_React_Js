@@ -1,0 +1,16 @@
+.bg-dark {
+    padding: 10px 0;
+}
+
+.body {
+    box-sizing: content-box;
+}
+.text-end {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.row {
+    display: block;
+}

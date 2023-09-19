@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../styles/components/pages/HomePage.css'
 
 const HomePage = (props) => {
     return (
@@ -105,15 +106,25 @@ const HomePage = (props) => {
                     </form>
                 </div>
                 <div className="card2 col-4">
-                    <div className="card" style={{ width: '18rem;' }}>
+                    <div className="card" style={{ width: '18rem' }}>
                         <div className="card-body">
                             <h5 className="card-title">Recoleta</h5>
                             <p className="card-text">El depto más alquilado, por </p>
-                            <div className="mapa"><iframe src={"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4644.691635877368!2d-58.38829110797576!3d-34.596752971622436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1692025450765!5m2!1ses-419!2sar"} width={"250"} height={"auto"} style={{ border: "0" }} loading={"lazy"} referrerpolicy={"no-referrer-when-downgrade"}></iframe></div>
+                            <div className="mapa">
+                                <iframe title="Mapa"
+                                    src={"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4644.691635877368!2d-58.38829110797576!3d-34.596752971622436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1692025450765!5m2!1ses-419!2sar"}
+                                    width={"250"}
+                                    height={"auto"}
+                                    style={{ border: "0" }}
+                                    loading={"lazy"}
+                                    referrerpolicy={"no-referrer-when-downgrade"}
+                                ></iframe>
+                            </div>
                             <a href={'/'} className='btn btn-primary'>Listado completo</a>
                         </div>
                     </div>
                 </div>
+
             </div>
         </main >
     );

@@ -1,3 +1,11 @@
+.bg-dark {
+    padding: 10px 0;
+}
+
+.body {
+    box-sizing: content-box;
+}
+
 .nav {
     flex-direction: column;
     align-items: flex-start;
@@ -10,4 +18,18 @@
     padding: 5px;
     text-align: left;
     color: white;
+}
+
+.text-end {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.row {
+    display: block;
+}
+.btn {
+    margin-right: 5px;
+    margin-bottom: 5px;
 }
