@@ -4,6 +4,7 @@ import "../styles/components/pages/HomePage.css"
 
 const HomePage = (props) => {
     return (
+        <body>
         <main className="holder">
             <div className="container fs-3 mt-5">
                 <p>Probando tamaño texto</p>
@@ -128,6 +129,7 @@ const HomePage = (props) => {
 
             </div>
         </main >
+        </body>
     );
 }
 export default HomePage;

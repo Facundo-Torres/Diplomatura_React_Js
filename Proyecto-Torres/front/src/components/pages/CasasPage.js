@@ -1,6 +1,9 @@
 import React from 'react';
+import "../styles/components/pages/CasasPage.css"
+
 const CasasPage = (props) => {
     return (
+        <body>
         <main>
         <div class="info2">
             <div class="titulo">
@@ -108,6 +111,7 @@ const CasasPage = (props) => {
 
 
     </main>
+    </body>
     );
 }
 export default CasasPage;
