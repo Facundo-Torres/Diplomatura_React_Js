@@ -1,12 +1,13 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import "../styles/components/layout/Footer.css"
 
 const Footer = (props) => {
    return (
       <footer className="bg-light text-center text-white">
-         <div className="container p-4 pb-0">
-            <section className="mb-4">
-               <div>
+         <Container className="p-4 pb-0">
+            <Row className="mb-4">
+               <Col>
                   <a className="btn text-white btn-floating m-1" style={{ backgroundColor: '#3b5998' }} href={'/'} role="button">
                      <i className="bi bi-facebook"></i>
                   </a>
@@ -22,10 +23,17 @@ const Footer = (props) => {
                   <a className="btn text-white btn-floating m-1" style={{ backgroundColor: '#333333' }} href={'/'} role="button">
                      <i className="bi bi-github"></i>
                   </a>
-               </div>
-            </section>
-         </div>
-         <div className="text-center p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}> © 2020 Copyright:<a className="text-white" href="https://www.google.com/">Man man man</a>
+               </Col>
+            </Row>
+         </Container>
+         <div className="text-center p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+            <Container>
+               <Row>
+                  <Col>
+                     © 2020 Copyright:<a className="text-white" href="https://www.google.com/">Man man man</a>
+                  </Col>
+               </Row>
+            </Container>
          </div>
       </footer>
    );
