@@ -1,43 +1,40 @@
 import React from 'react';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 
-const Nav = (props) => {
+const Navigation = (props) => {
     return (
-        <nav className="navbar navbar-expand-lg bg-danger" data-bs-theme="danger">
+        <Navbar expand="lg" bg="danger" variant="dark">
             <div className="container-fluid">
-                <div className="navbar-brand"></div>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li className="nav-item">
-                            <Link className="nav-link text-white" to="/">Inicio</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link text-white" to="/Empresa">Empresa</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link text-white" to="/Casas">Casas</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link text-white" to="/Depto">Depto</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link text-white" to="/Reserva">Reserva</Link>
-                        </li>
-                        
-                    </ul>
-                </div>
+                <Navbar.Toggle aria-controls="navbarSupportedContent" />
+                <Navbar.Collapse id="navbarSupportedContent">
+                    <Nav className="me-auto">
+                        <Nav.Link as={Link} to="/" className="text-white">
+                            Inicio
+                        </Nav.Link>
+                        <Nav.Link as={Link} to="/Empresa" className="text-white">
+                            Empresa
+                        </Nav.Link>
+                        <Nav.Link as={Link} to="/Casas" className="text-white">
+                            Casas
+                        </Nav.Link>
+                        <Nav.Link as={Link} to="/Depto" className="text-white">
+                            Depto
+                        </Nav.Link>
+                        <Nav.Link as={Link} to="/Reserva" className="text-white">
+                            Reserva
+                        </Nav.Link>
+                    </Nav>
+                    <Button variant="outline-light" className="me-2">
+                        Logeo
+                    </Button>
+                    <Button variant="warning">Registrarte</Button>
+                </Navbar.Collapse>
             </div>
-            <div className="text-end">
-                <button type="button" className="btn btn-outline-light me-2">Logeo</button>
-                <button type="button" className="btn btn-warning">Registrarte</button>
-            </div>
-        </nav>
+        </Navbar>
     );
 }
 
-export default Nav;
+export default Navigation;

@@ -17,7 +17,7 @@ const CasasPage = (props) => {
                             <div className="card-body">
                                 <h5 className="card-title">Palermo</h5>
                                 <p className="card-text">Terraza Privada con Vistas Panorámicas: Disfruta de impresionantes vistas panorámicas desde tu propia terraza privada. Ya sea para tomar un café matutino o disfrutar de una cena al aire libre, este espacio te cautivará.</p>
-                                <a href={'/'} className="btn btn-primary">Más información, este boton redirigirá  a  una landing de cada inmueble en particular con todo sus datos y galeria de fotos etc.</a>
+                                <a href={'/'} className="btn btn-primary">Más información</a>
                             </div>
                         </div>
                     </div>
