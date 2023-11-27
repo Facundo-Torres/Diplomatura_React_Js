@@ -1,18 +1,18 @@
-import Form from 'react-bootstrap/Form';
-
-function FormGroupExample() {
-  return (
-    <Form>
-      <Form.Group className="mb-3" controlId="formGroupEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formGroupPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
-      </Form.Group>
-    </Form>
-  );
-}
-
-export default FormGroupExample;
+<div class="contatner" style="margtn-top:l00px;">
+    <div class="row">
+        <from action="/admtn/logtn" method="post">
+            <div class="mb-3 row">
+                <div class="col-sm.18">
+                    <input type="text" class="form-control" id="inputUser" placeholder="Usuario" name="usuario">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña"
+                        name="password">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+        </from>
+    </div>
+</div>
