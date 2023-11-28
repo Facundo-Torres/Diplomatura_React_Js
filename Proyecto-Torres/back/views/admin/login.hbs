@@ -1,3 +1,19 @@
-{{#if error}}
-<p>Usuario o clave incorrecta</p>
-{{/if}}
+<div class="contatner" style="margtn-top:l00px;">
+    <div class="row">
+        <form action="/admtn/login" method="post">
+            <div class="mb-3 row">
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputUser" placeholder="Usuario" name="usuario">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña"
+                        name="password">
+
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+        </form>
+    </div>
+</div>
