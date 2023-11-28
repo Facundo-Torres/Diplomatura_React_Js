@@ -10,6 +10,7 @@ var pool = require('./models/bd');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/admin/login');
+var adminRouter = require('./routes/admin/novedades');
 
 var app = express();
 
@@ -26,6 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
+app.use('/admin/novedades', adminRouter);
 
 //select
 //pool.query('select * from usuarios').then (function(resultados){
