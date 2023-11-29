@@ -8,6 +8,6 @@ async function getUserByUsernameAndPassword(user, password){
     } catch (error) {
         throw error;
     }
-}
+};
 
-module.exports = { getUserByUsernameAndPassword}
+module.exports = { getUserByUsernameAndPassword };
