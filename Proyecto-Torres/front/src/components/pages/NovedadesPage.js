@@ -1,6 +1,6 @@
 import React from 'react';
 
-const EmpresaPage = (props) => {
+const NovedadesPage = (props) => {
     return (
         <main>
             <div className="container fs-3 mt-5">
@@ -16,4 +16,4 @@ const EmpresaPage = (props) => {
         </main>
     );
 }
-export default EmpresaPage;
+export default NovedadesPage;

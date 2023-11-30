@@ -102,9 +102,7 @@ const HomePage = (props) => {
                   ></iframe>
                 </div>
                 <a
-                  href="https://facundo-torres.github.io/Diplomatura-Reactjs/Git-5-Proyecto-1/Listado.html"
-                  className="btn btn-primary"
-                >
+                  href="/Novedades" className="btn btn-primary" >
                   Departamentos
                 </a>
               </Card.Body>

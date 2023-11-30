@@ -8,7 +8,7 @@ import Nav from './components/layout/Nav';
 import Footer from './components/layout/Footer';
 
 import HomePage from './components/pages/HomePage';
-import EmpresaPage from './components/pages/EmpresaPage';
+import NovedadesPage from './components/pages/NovedadesPage';
 import InmueblesPage from './components/pages/InmueblePage';
 import CasasPage from './components/pages/CasasPage';
 import DeptoPage from './components/pages/DeptoPage';
@@ -23,7 +23,7 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/Empresa" element={<EmpresaPage />} />
+          <Route path="/Novedades" element={<NovedadesPage />} />
           <Route path="/Inmueble" element={<InmueblesPage />} />
           <Route path="/Casas" element={<CasasPage />} />
           <Route path="/Depto" element={<DeptoPage />} />

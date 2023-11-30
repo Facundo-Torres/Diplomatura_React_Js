@@ -14,8 +14,8 @@ const Navigation = (props) => {
                         <Nav.Link as={Link} to="/" className="text-white">
                             Inicio
                         </Nav.Link>
-                        <Nav.Link as={Link} to="/Empresa" className="text-white">
-                            Empresa
+                        <Nav.Link as={Link} to="/Novedades" className="text-white">
+                            Novedades
                         </Nav.Link>
                         <Nav.Link as={Link} to="/Casas" className="text-white">
                             Casas
