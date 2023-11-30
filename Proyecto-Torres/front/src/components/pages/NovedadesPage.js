@@ -1,19 +1,35 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import NovedadItem from '../../components/novedades/NovedadItem';
 
 const NovedadesPage = (props) => {
+    const [loading, setLoading] = useState(false);
+    const [novedades, setNovedades] = useState([]);
+    useEffect(() => {
+        const cargarNovedades = async () => {
+            setLoading(true);
+            const response = await axios.get('http://localhost:3000/api/novedades');
+            setNovedades(response.data);
+            setLoading(false);
+        };
+        cargarNovedades();
+    }, []);
     return (
-        <main>
-            <div className="container fs-3 mt-5">
-                <p>Comienzos.... titulo de la descripcion</p>
-            </div>
-            <div className="container mb-5">
-                <p> IMPORTANTE </p>
-                <p>Informacion importante...Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione debitis ipsum nostrum architecto. Harum pariatur provident nemo officiis ad inventore vitae, non reprehenderit sed consectetur nostrum eligendi, eos cumque laboriosam!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione debitis ipsum nostrum architecto. Harum pariatur provident nemo officiis ad inventore vitae, non reprehenderit sed consectetur nostrum eligendi, eos cumque laboriosam!Lorem</p> 
-                <div className="grupo">
-                    <img src={'https://facundo-torres.github.io/Diplomatura-Reactjs/Git-5-Proyecto-1/img/equipo.jpg'} class="img-fluid" alt="Grupal" />
-                </div>
-            </div>
-        </main>
+        <section className='holder'>
+            <h2>Novedades</h2>
+            {loading ? (
+                <p>Cargando...</p>
+
+            ) : (
+                novedades.map(item => <NovedadItem key={item.id}
+                    depto={item.depto} ambientes={item.ambientes} cochera={item.cochera} />)
+
+            )}
+        </section>
     );
+
+
 }
+
+
 export default NovedadesPage;
