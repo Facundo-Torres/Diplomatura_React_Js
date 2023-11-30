@@ -1,0 +1,37 @@
+<div class="pt-3">
+    <h4>Agregar / Actualizar</h4>
+    <form action="/admin/novedades/agregar" method="post">
+
+        <div class="form-floating mb-3">
+            <textarea class="form-control" placeholder="depto" name="depto"></textarea>
+            <label for="floatingTextarea">Depto</label>
+        </div>
+        <div class="form-floating mb-3">
+            <textarea class="form-control" placeholder="ambientes" name="ambientes"></textarea>
+            <label for="floatingTextarea">Ambientes</label>
+        </div>
+       <div class="form-floating mb-3">
+            <select class="form-select" name="cochera">
+                <option selected>Cochera</option>
+                <option value="1">Si</option>
+                <option value="2">No</option>
+
+            </select>
+            <label for="floatingSelect">Tiene</label>
+        </div>
+        
+
+      
+        <div class="d-grid gap-2 col-6 mx-auto">
+
+            <button type="button" class="btn btn-outline-primary m-3 ">Guardar</button>
+        </div>
+    </form>
+    {{#if error}}
+    <p>{{message}}</p>
+    {{/if}}
+
+
+
+
+</div>
