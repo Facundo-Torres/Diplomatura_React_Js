@@ -1,18 +1,18 @@
 <div class="pt-3">
     <h4>Agregar / Actualizar</h4>
-    <form action="/admin/novedades/agregar" method="post">
-
+    <form action="/admin/novedades/modificar" method="post">
+        <input type="hidden" value="{{novedad.id}}" name="id">
         <div class="form-floating mb-3">
             <textarea class="form-control" placeholder="depto" name="depto"></textarea>
-            <label for="floatingTextarea">Depto</label>
+            <label for="floatingTextarea">{{novedad.depto}}</label>
         </div>
         <div class="form-floating mb-3">
             <textarea class="form-control" placeholder="ambientes" name="ambientes"></textarea>
-            <label for="floatingTextarea">Ambientes</label>
+            <label for="floatingTextarea">{{novedad.ambientes}}</label>
         </div>
         <div class="form-floating mb-3">
             <select class="form-select" name="cochera">
-                <option selected>Cochera</option>
+                <option selected>{{novedad.cochera}}</option>
                 <option value="1">Si</option>
                 <option value="2">No</option>
 
@@ -24,7 +24,7 @@
 
         <div class="d-grid gap-2 col-6 mx-auto">
 
-            <button type="submit" class="btn btn-outline-primary m-3 ">Guardar</button>
+            <button type="submit" class="btn btn-outline-primary m-3 ">Modificar</button>
         </div>
     </form>
     {{#if error}}
