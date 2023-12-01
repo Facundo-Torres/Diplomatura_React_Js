@@ -23,8 +23,8 @@ const Navigation = (props) => {
                         <Nav.Link as={Link} to="/Depto" className="text-white">
                             Depto
                         </Nav.Link>
-                        <Nav.Link as={Link} to="/Reserva" className="text-white">
-                            Reserva
+                        <Nav.Link as={Link} to="/Contacto" className="text-white">
+                            Contacto
                         </Nav.Link>
                     </Nav>
                     <Button variant="outline-light" className="me-2">

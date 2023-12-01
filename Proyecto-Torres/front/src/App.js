@@ -12,7 +12,7 @@ import NovedadesPage from './components/pages/NovedadesPage';
 import InmueblesPage from './components/pages/InmueblePage';
 import CasasPage from './components/pages/CasasPage';
 import DeptoPage from './components/pages/DeptoPage';
-import ReservaPage from './components/pages/ReservaPage';
+import ContactoPage from './components/pages/ContactoPage';
 
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
           <Route path="/Inmueble" element={<InmueblesPage />} />
           <Route path="/Casas" element={<CasasPage />} />
           <Route path="/Depto" element={<DeptoPage />} />
-          <Route path="/Reserva" element={<ReservaPage />} />
+          <Route path="/Contacto" element={<ContactoPage />} />
           
         </Routes>
 

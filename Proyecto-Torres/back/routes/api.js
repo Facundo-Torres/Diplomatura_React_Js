@@ -10,11 +10,11 @@ router.get('/novedades', async function (req, res, next) {
     res.json(novedades);
 });
 
-router.post('/contacto', async (req, res, next) => {
+router.post('/contacto', async (req, res) => {
     const mail = {
         to:'facutor@gmail.com',
         subject: 'Contacto web',
-        html: '${req.body.nombre} se contacto para más info. Su correo es: ${req.body.email}<br> Además, dejo el siguiente comentario: ${req.body,mensaje}<br> Su telefono es: ${req.body.telefono}'
+        html: `${req.body.nombre} se contacto para más info. Su correo es: ${req.body.email}<br> Además, dejo el siguiente comentario: ${req.body.mensaje}<br> Su telefono es: ${req.body.telefono}`
     }
     const transport = nodemailer.createTransport ({
         host: process.env.SMTP_HOST,
@@ -29,7 +29,7 @@ router.post('/contacto', async (req, res, next) => {
     await transport.sendMail(mail)
 
     res.status(201).json ({
-        error:false,
+        error: false,
         message: 'Mensaje enviado'
     });
 
