@@ -34,74 +34,20 @@ const ReservaPage = (props) => {
                         Se ve bien!
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <label for="validationForm02" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="validationForm02" value="Ingrese su apellido" required />
-                    <div class="valid-feedback">
-                        Se ve bien!
-                    </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
                 </div>
 
-                <div class="col-md-6">
-                    <label for="validationForm03" class="form-label">Ciudad</label>
-                    <input type="text" class="form-control" id="validationForm03" required />
-                    <div class="invalid-feedback">
-                        Ingrese la Ciudad donde vive
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <label for="validationForm04" class="form-label">Provincia</label>
-                    <select class="form-select" id="validationForm04" required>
-                        <option selected disabled value="">Elija...</option>
-                        <option>Buenos Aires</option>
-                        <option>Catamarca</option>
-                        <option>Chaco</option>
-                        <option>Chubut</option>
-                        <option>Córdoba</option>
-                        <option>Corrientes</option>
-                        <option>Entre Ríos</option>
-                        <option>Formosa</option>
-                        <option>Jujuy</option>
-                        <option>La Pampa</option>
-                        <option>La Rioja</option>
-                        <option>Mendoza</option>
-                        <option>Misiones</option>
-                        <option>Neuquén</option>
-                        <option>Río Negro</option>
-                        <option>Salta</option>
-                        <option>San Juan</option>
-                        <option>San Luis</option>
-                        <option>Santa Cruz</option>
-                        <option>Santa Fe</option>
-                        <option>Santiago del Estero</option>
-                        <option>Tierra del Fuego</option>
-                        <option>Tucumán</option>
-                    </select>
-                    <div class="invalid-feedback">
-                        Seleccione una provincia.
-                    </div>
-                </div>
                 <div class="col-md-3">
                     <label for="validationForm05" class="form-label">Tel</label>
-                    <input type="text" class="form-control" id="validationForm05" required />
+                    <input type="text" class="form-control" placeholder="Telefono" id="validationForm05" required />
                     <div class="invalid-feedback">
                         Por favor ingrese un telefono de contacto.
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <label for="validationDesde1" class="form-label">Fecha Desde</label>
-                    <input type="date" class="form-control" id="validationDesde1" required />
-                    <div class="invalid-feedback">
-                        Por favor ingrese fecha desde cuando quiere reservar
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <label for="validationHasta1" class="form-label">Fecha Hasta</label>
-                    <input type="date" class="form-control" id="validationHasta1" required />
-                    <div class="invalid-feedback">
-                        Por favor ingrese fecha hasta cuando quiere reservar
-                    </div>
-                </div>
+               
+
 
                 <div class="col-12">
                     <div class="form-floating">
